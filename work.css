@@ -1,0 +1,35 @@
+.work-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bg-custom-blue {
+    background-color: #020617;
+  }
+
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    transition: transform 0.5s ease;
+  }
+  
+  .work-item {
+    width: 100%;
+  }
+  
+  .prev,
+  .next {
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }

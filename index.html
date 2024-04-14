@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Fircode</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-puX3t7m1X0tUI5w0GDOrs1K/rGVFyHX2eD4ZSvR3kEE7Dxr6NTLm1oFZ0wyeNL9t/26gHPhHvUo+oJoPLtDbkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .hover-underline {
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      color: white;
+    }
+    .hover-underline::before {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .hover-underline:hover::before {
+      transform: scaleX(1);
+    }
+
+    html {
+    scroll-behavior: smooth;
+  }   
+
+  </style>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="work.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="skill.css">
+</head>
+<body>
+  <nav id="navbar" class="bg-transparent p-4 fixed w-full z-50 transition duration-300 ease-in-out" style="opacity: 1; transform: translateY(0);">
+    <div class="container mx-auto flex justify-between items-center">
+      <div>
+        <h1 class="text-white text-lg font-bold ml-4">Fircode</h1>
+      </div>
+      <div class="flex justify-center items-center flex-grow">
+        <ul class="flex space-x-6 justify-center">
+          <li><a href="#work" class="hover-underline font-semibold text-white">Work</a></li>
+          <li><a href="#about" class="hover-underline font-semibold text-white">About</a></li>
+          <li><a href="#footer" class="hover-underline font-semibold text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div class="flex items-center">
+        <a href="#hero" class="text-white mr-4 hover:text-gray-300"><i class="fas fa-home text-xl"></i></a>
+        <a href="https://www.instagram.com/athnf._/" class="text-white mr-4 hover:text-gray-300"><i class="fab fa-instagram text-xl"></i></a>
+        <a href="https://www.youtube.com/channel/UCkzJRG-oTUqbgJDwFi6Wqvg" class="text-white mr-4 hover:text-gray-300"><i class="fab fa-youtube text-xl"></i></a>
+        <a href="https://wa.me/6282125511485" class="text-white hover:text-gray-300"><i class="fab fa-whatsapp text-xl"></i></a>
+      </div>
+    </div>
+  </nav>
+    
+      <section id="hero" class="hero-section relative">
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <h1>Welcome to Fircode</h1>
+          <p>Your ultimate destination for stunning web development solutions.</p>
+          <a href="#work" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded inline-block mt-4 transition duration-300 ease-in-out">Get Started</a>
+        </div>
+      </section>
+
+     <section id="work" class="py-12 bg-custom-blue text-white h-screen">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Our Work</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              <div class="work-item bg-white p-4 md:p-8 rounded-lg shadow-md transition-transform hover:scale-105 on-screen">
+                <img src="work/osis.jpeg" alt="Work 1" class="w-full rounded-lg mb-4">
+                <h3 class="text-gray-600 font-bold mb-2">Website OSPK</h3>
+                <p class="text-gray-600">Website Organisasi</p>
+                </div>
+                <div class="work-item bg-white p-4 md:p-8 rounded-lg shadow-md transition-transform hover:scale-105 on-screen">
+                <img src="work/porto.jpeg" alt="Work 2" class="w-full rounded-lg mb-4">
+                <h3 class="text-gray-600 font-bold mb-2">Portofolio</h3>
+                <p class="text-gray-600">Website Portofolio</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-12 bg-custom-blue text-white h-screen">
+          <div class="container mx-auto flex flex-col md:flex-row items-center justify-center" data-aos="fade-up">
+            <div class="container mx-auto">
+              <div class="about-text text-center">
+            <div class="about-text text-center md:text-left">
+              <h2 class="text-3xl font-bold mb-4">Tentang Saya</h2>
+              <p class="mb-6">Salam, nama saya adalah Athaillah Nazhif Firdaus. </p>
+              <p class="mb-6">Saya telah lama menikmati tantangan dan kreativitas dalam dunia coding, yang mendorong saya untuk mengejar minat dan karier dalam pengembangan perangkat lunak. Saya menemukan kepuasan dalam memecahkan masalah dan merancang solusi yang efisien dan elegan. Selama berkuliah, saya mengejar pengetahuan lebih lanjut tentang pemrograman dan pengembangan perangkat lunak.</p>
+              <p class="mb-6">Dengan latar belakang saya yang kuat dalam coding dan keterlibatan dalam komunitas pengembang, saya bertekad untuk terus berkembang dan menjadi kontributor yang berharga dalam industri teknologi. Saya percaya bahwa dengan semangat dan ketekunan, saya dapat mencapai tujuan saya untuk menciptakan produk dan layanan yang bermanfaat bagi masyarakat dan membuat dampak positif dalam dunia digital.</p>
+              <div class="skills">
+                <h2 class="text-3xl font-bold mb-4">My Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                  <div class="skill-item text-center on-screen show" data-aos="fade-up">
+                    <i class="fab fa-html5 text-5xl text-custom-blue"></i>
+                    <h3 class="text-lg font-semibold mt-4">HTML</h3>
+                  </div>
+                  <div class="skill-item text-center on-screen show" data-aos="fade-up">
+                    <i class="fab fa-css3-alt text-5xl text-custom-blue"></i>
+                    <h3 class="text-lg font-semibold mt-4">CSS</h3>
+                  </div>
+                  <div class="skill-item text-center on-screen show" data-aos="fade-up">
+                    <i class="fab fa-js text-5xl text-custom-blue"></i>
+                    <h3 class="text-lg font-semibold mt-4">JavaScript</h3>
+                  </div>
+                  <div class="skill-item text-center on-screen show" data-aos="fade-up">
+                    <i class="fab fa-laravel text-5xl text-custom-blue"></i>
+                    <h3 class="text-lg font-semibold mt-4">Laravel</h3>
+                  </div>
+                  <div class="skill-item text-center on-screen show" data-aos="fade-up">
+                    <i class="fab fa-python text-5xl text-custom-blue"></i>
+                    <h3 class="text-lg font-semibold mt-4">Python</h3>
+                  </div>
+                  <div class="skill-item text-center on-screen show" data-aos="fade-up">
+                    <i class="fas fa-code text-5xl text-custom-blue"></i>
+                    <h3 class="text-lg font-semibold mt-4">C++</h3>
+                  </div>
+                  <div class="skill-item text-center on-screen show" data-aos="fade-up">
+                    <i class="fas fa-database text-5xl text-custom-blue"></i>
+                    <h3 class="text-lg font-semibold mt-4">SQL</h3>
+                  </div>
+                  <div class="skill-item text-center on-screen show" data-aos="fade-up">
+                    <i class="fab fa-react text-5xl text-custom-blue"></i>
+                    <h3 class="text-lg font-semibold mt-4">React</h3>
+                  </div>
+                  <div class="skill-item text-center on-screen show" data-aos="fade-up">
+                    <i class="fab fa-java text-5xl text-custom-blue"></i>
+                    <h3 class="text-lg font-semibold mt-4">Java</h3>
+                  </div>
+                  <div class="skill-item text-center on-screen show" data-aos="fade-up">
+                    <i class="fab fa-js text-5xl text-custom-blue"></i>
+                    <h3 class="text-lg font-semibold mt-4">JavaScript</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+        </section>
+
+
+        <footer id="footer" class="bg-gray-900 text-white py-8">
+          <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+            <div class="mb-4 md:mb-0">
+              <h2 class="text-3xl font-bold">Contact Me</h2>
+              <p class="mt-2">Feel free to reach out to me through the following channels:</p>
+            </div>
+            <div class="flex justify-center md:justify-end items-center space-x-6">
+              <a href="mailto:azhif.firdaus25@gmail.com" class="text-custom-blue hover:text-blue-500">
+                <i class="fas fa-envelope text-4xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/athaillah-nazhif-firdaus-750aa027b/" target="_blank" rel="noopener noreferrer" class="text-custom-blue hover:text-blue-500">
+                <i class="fab fa-linkedin-in text-4xl"></i>
+              </a>
+              <a href="https://github.com/athnf" target="_blank" rel="noopener noreferrer" class="text-custom-blue hover:text-blue-500">
+                <i class="fab fa-github text-4xl"></i>
+              </a>
+            </div>
+          </div>
+        </footer>
+        
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-WbU1hyc9K3s9E0Ct1FgyD9IQ8QNoJ/zrqAXSkJN/F3j1txJjIB2y5hRf4/QnKKX5cGf+clQGjsKgnJ74LbgSfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+        AOS.init();
+      </script>
+      <script src="nav.js"></script>
+      <script src="smooth-scroll.js"></script>
+    </body>
+</html>
